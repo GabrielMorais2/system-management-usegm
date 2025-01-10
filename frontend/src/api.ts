@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuth } from './utils/useAuthUtils';
 
 const http = axios.create({
-    baseURL: 'http://localhost:8080/',
+    baseURL: import.meta.env.VITE_API_URL,
 });
 
 http.interceptors.request.use((request) => {
