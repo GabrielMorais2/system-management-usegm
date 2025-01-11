@@ -6,6 +6,7 @@ const http = axios.create({
 });
 
 http.interceptors.request.use((request) => {
+  console.log(import.meta.env.VITE_API_URL + " url")
     const token = localStorage.getItem("token");
     console.log(token);
     if(token) {
