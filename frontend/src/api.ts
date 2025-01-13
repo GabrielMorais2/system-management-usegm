@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuth } from './utils/useAuthUtils';
 
 const http = axios.create({
-    baseURL: import.meta.env.VITE_API_URL,
+    baseURL: "https://system-management-usegm.onrender.com",
 });
 
 http.interceptors.request.use((request) => {
